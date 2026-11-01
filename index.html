@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Argot</title>
+<meta name="description" content="The Yale Broadcasting Company’s new hip-hop magazine. Issue 1 coming soon.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,700;1,700&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0a0a0a; --fg:#f2efe9; --muted:#a8a39a; --accent:#d4af37; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { height:100%; }
+  body {
+    background: radial-gradient(ellipse at 50% 0%, #1a1a1a 0%, var(--bg) 60%);
+    color:var(--fg);
+    font-family:'Space Grotesk', system-ui, -apple-system, sans-serif;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center; padding:2rem;
+  }
+  main { max-width:44rem; }
+  h1 {
+    font-family:'Bodoni Moda', 'Playfair Display', Georgia, serif;
+    font-style:italic; font-weight:700;
+    font-size:clamp(4rem, 20vw, 11rem);
+    line-height:.9; letter-spacing:-.02em;
+    text-transform:uppercase;
+  }
+  h1 .the {
+    display:block;
+    font-size:clamp(.9rem, 3.5vw, 1.6rem);
+    letter-spacing:.5em;
+    padding-left:.5em; /* offsets trailing letter-spacing so it stays centred */
+    margin-bottom:1rem;
+    line-height:1;
+  }
+  .rule { width:4rem; height:2px; background:var(--accent); margin:2rem auto; }
+  p { font-size:clamp(1rem, 2.6vw, 1.35rem); line-height:1.5; color:var(--muted); }
+  p strong {
+    display:block; margin-top:1rem; color:var(--fg); font-weight:500;
+    letter-spacing:.28em; text-transform:uppercase;
+    font-size:clamp(.8rem, 2.2vw, 1rem);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1><span class="the">The</span>Argot</h1>
+    <div class="rule"></div>
+    <p>The Yale Broadcasting Company’s new hip-hop magazine.
+      <strong>Issue 1 coming soon</strong>
+    </p>
+  </main>
+</body>
+</html>
